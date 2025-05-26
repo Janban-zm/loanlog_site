@@ -1,5 +1,6 @@
 import Accordion from "@/components/common/accordion";
 import { Hero } from "@/components/home/hero ";
+import { WhyChoose } from "@/components/home/why_choose_us";
 
 const faqItems = [
   {
@@ -50,8 +51,14 @@ export default function Home() {
       <header className="w-full bg-blue-50">
         <Hero />
       </header>
-      <main className="w-full flex flex-col justify-center items-center p-8 gap-16 sm:p-20">
+      <main className="w-full flex flex-col justify-center items-center gap-16 sm:p-20">
+        <section className="lg:w-[70vw]">
+          <WhyChoose />
+        </section>
         <section id="Faq" className="lg:w-[60vw]">
+          <h2 className="text-center text-sm lg:text-lg font-bold mb-10">
+            Frequently Asked Question
+          </h2>
           <Accordion items={faqItems} />
         </section>
       </main>
