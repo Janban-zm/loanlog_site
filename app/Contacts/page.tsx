@@ -39,7 +39,7 @@ export default function ContactPage() {
       </header>
 
       {/* Main Content */}
-      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto -mb-28">
+      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
           {/* right Section - Contact Form */}
           <div className="w-full bg-white rounded-lg shadow-sm p-6 md:p-8">

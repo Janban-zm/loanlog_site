@@ -27,8 +27,8 @@ interface ApiResponse {
   error?: string;
 }
 
-//const MyForm_Api = "https://mynodemailer-production.up.railway.app/send-email"; // production email api
-const MyForm_Api = "http://localhost:5000/send-email"; // local email api
+const MyForm_Api = "http://178.128.41.137:5000/send-email"; // production email api
+//const MyForm_Api = "http://localhost:5000/send-email"; // local email api
 
 const MyForm = () => {
   // State to manage form input values
