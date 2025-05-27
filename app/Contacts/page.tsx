@@ -28,7 +28,7 @@ export default function ContactPage() {
       >
         <section
           className={
-            "flex flex-col text-white justify-center items-center h-[30dvh]"
+            "flex flex-col text-white justify-center items-center h-[30dvh] lg:h-[25dvh]"
           }
         >
           <h1 className={"text-3xl font-black text-blue-950"}>Contacts</h1>
@@ -39,8 +39,15 @@ export default function ContactPage() {
       </header>
 
       {/* Main Content */}
-      <section className="py-10 px-6 md:px-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-24">
+      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto -mb-28">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+          {/* right Section - Contact Form */}
+          <div className="w-full bg-white rounded-lg shadow-sm p-6 md:p-8">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+              Send us a message
+            </h2>
+            <Form />
+          </div>
           {/* left Section - Intro & Contact Info */}
           <div className="space-y-10 pt-4">
             <div className="space-y-6">
@@ -79,14 +86,6 @@ export default function ContactPage() {
                 })}
               </ul>
             </div>
-          </div>
-
-          {/* right Section - Contact Form */}
-          <div className="w-full bg-white rounded-lg shadow-sm p-6 md:p-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-              Send us a message
-            </h2>
-            <Form />
           </div>
         </div>
       </section>

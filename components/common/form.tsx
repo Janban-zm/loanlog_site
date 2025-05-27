@@ -27,8 +27,8 @@ interface ApiResponse {
   error?: string;
 }
 
-const MyForm_Api = "https://mynodemailer-production.up.railway.app/send-email"; // production email api
-//const MyForm_Api = "http://localhost:5000/send-email"; // local email api
+//const MyForm_Api = "https://mynodemailer-production.up.railway.app/send-email"; // production email api
+const MyForm_Api = "http://localhost:5000/send-email"; // local email api
 
 const MyForm = () => {
   // State to manage form input values
@@ -78,9 +78,9 @@ const MyForm = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          websiteID: "Rebelz", // Identifier for the website
+          websiteID: "loanlog", // Identifier for the website
           apiKey:
-            "427a4b0349070cb6622bbf79aca2d05d3331dccdf8c581878b84a1fe69f6f40d", // API key for authentication
+            "dd51f6eee52627e20c4f7cf27eaf790ef1ae432088cc25a633ef1eb96e2703a8", // API key for authentication
           senderName: formData.name,
           senderEmail: formData.email,
           subject: formData.subject,
