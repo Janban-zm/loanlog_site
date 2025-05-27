@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavLinks from "@/components/common/nav-bar";
 import Footer from "@/components/common/footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 const linksData = [
   { label: "Home", href: "/" },
   { label: "Contacts", href: "/Contacts" },
-  { label: "Documentation", href: "/Documentation" },
+  //{ label: "Documentation", href: "/Documentation" },
   { label: "Pricing", href: "/#Prices" },
   { label: "FAQs", href: "/#Faq" },
 ];
@@ -40,6 +41,7 @@ export default function RootLayout({
       >
         <NavLinks links={linksData} logoSrc="/logo.svg" />
         {children}
+        <Toaster />
         <Footer />
       </body>
     </html>

@@ -1,6 +1,8 @@
 import Accordion from "@/components/common/accordion";
 import { Hero } from "@/components/home/hero ";
 import { WhyChoose } from "@/components/home/why_choose_us";
+import { Features } from "@/components/home/features";
+import { Pricing } from "@/components/home/pricing";
 
 const faqItems = [
   {
@@ -33,30 +35,50 @@ const faqItems = [
     answer:
       "Yes. We provide a limited-time demo so you can explore the platform before committing to a plan.",
   },
-  {
-    question: "Is my data safe on Loan Log?",
-    answer:
-      "Yes. We prioritize your data's security using modern encryption and cloud security practices to ensure your information is always protected.",
-  },
-  {
-    question: "What kind of support do I receive?",
-    answer:
-      "Support depends on your plan. All users receive basic support, while Premium and Full Purchase clients enjoy priority support and onboarding assistance.",
-  },
 ];
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-items-center min-h-screen  font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col items-center justify-center min-h-screen  font-[family-name:var(--font-geist-sans)]">
       <header className="w-full bg-blue-50">
         <Hero />
       </header>
-      <main className="w-full flex flex-col justify-center items-center gap-16 sm:p-20">
-        <section className="lg:w-[70vw]">
+      <main className="w-full flex flex-col justify-center items-center gap-16">
+        <section className="lg:w-[70vw] p-4 lg:p-8">
           <WhyChoose />
         </section>
-        <section id="Faq" className="lg:w-[60vw]">
-          <h2 className="text-center text-sm lg:text-lg font-bold mb-10">
+        <section id="Features" className="lg:w-[60vw]">
+          <div className="w-full text-center lg:text-end px-4 flex flex-col items-center lg:items-end">
+            <h2 className="text-xl lg:text-3xl font-bold max-w-xl text-blue-900">
+              Tools that power smarter, faster lending
+            </h2>
+            <p className="mt-2 text-gray-600 text-sm lg:text-lg lg:text-end">
+              From automated calculations to downloadable reports, our system is
+              built to streamline every step of the loan process — so you can
+              focus more on growth, not admin.
+            </p>
+          </div>
+          <Features />
+        </section>
+        <section
+          id="Prices"
+          className="w-full bg-blue-400 flex flex-col justify-center items-center p-10"
+        >
+          <div className="w-full lg:w-[70vw] text-center lg:text-start px-4 flex flex-col items-center lg:items-start">
+            <h2 className="text-xl lg:text-3xl font-bold max-w-xl text-white">
+              Flexible Pricing for Every Growth Stage
+            </h2>
+            <p className="mt-2 text-gray-200 text-sm lg:text-lg lg:text-start">
+              Whether you are just getting started or scaling fast, our plans
+              are designed to meet your needs — with powerful tools, support,
+              and features tailored to how you work.
+            </p>
+          </div>
+
+          <Pricing />
+        </section>
+        <section id="Faq" className="w-full lg:w-[70vw] p-4 lg:p-8">
+          <h2 className="text-center text-xl font-bold mb-10 text-blue-950">
             Frequently Asked Question
           </h2>
           <Accordion items={faqItems} />

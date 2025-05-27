@@ -18,9 +18,10 @@ const CurrentYear = newDate.getFullYear();
 const links: LinkProps[] = [
   { name: "Home", link: "/" },
   { name: "Contacts", link: "/Contacts" },
-  { name: "Documentation", link: "/Documentation" },
+  // { name: "Documentation", link: "/Documentation" },
   { name: "Pricing", link: "/#Prices" },
   { name: "FAQs", link: "/#Faq" },
+  { name: "Terms and Conditions", link: "/Terms" },
 ];
 
 const developers: developerProp[] = [

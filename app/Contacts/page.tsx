@@ -5,17 +5,17 @@ const contactDetails = [
   {
     icon: FaPhoneAlt,
     label: "Phone",
-    value: "+(260) 964 - 575 - 072 ",
+    value: "+(260) 771-923-958 ",
   },
   {
     icon: FaEnvelope,
     label: "Email",
-    value: "therebelzplus@gmail.com",
+    value: "Chilanzi11037@gmail.com",
   },
   {
     icon: FaMapMarkerAlt,
     label: "Location",
-    value: "Lusaka | Kitwe, Zambia",
+    value: "Kitwe, Zambia",
   },
 ];
 
@@ -23,13 +23,15 @@ export default function ContactPage() {
   return (
     <div className="w-full">
       {/* Hero Header */}
-      <header className={"text-center w-full bg-gray-900"}>
+      <header
+        className={"text-center w-full  bg-[url('/bg.svg')] bg-cover bg-center"}
+      >
         <section
           className={
             "flex flex-col text-white justify-center items-center h-[30dvh]"
           }
         >
-          <h1 className={"text-3xl font-black"}>Contacts</h1>
+          <h1 className={"text-3xl font-black text-blue-950"}>Contacts</h1>
           <p className={"text-xm lg:text-xl  text-center text-blue-400"}>
             Get in touch
           </p>
@@ -43,19 +45,18 @@ export default function ContactPage() {
           <div className="space-y-10 pt-4">
             <div className="space-y-6">
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
-                We will love to hear from you
+                Let’s Talk Loans & Lending
               </h2>
               <p className="text-gray-600 leading-relaxed text-base md:text-lg">
-                Whether you are curious about our work, want to collaborate, or
-                just want to say hello — we are always open to conversations.
-                Reach out via the form or directly through any of the details
-                below.
+                Have questions about how LoanLog works, pricing, or
+                partnerships? Our team is here to help. Reach out through the
+                form or connect with us directly using the details below.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6 md:p-8">
               <h3 className="text-xl font-medium text-gray-800 mb-6">
-                Contact Information
+                Contact Us
               </h3>
               <ul className="space-y-6">
                 {contactDetails.map((item, index) => {
@@ -79,6 +80,7 @@ export default function ContactPage() {
               </ul>
             </div>
           </div>
+
           {/* right Section - Contact Form */}
           <div className="w-full bg-white rounded-lg shadow-sm p-6 md:p-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-6">

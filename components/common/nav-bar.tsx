@@ -101,7 +101,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
                 variant="link"
                 className={`${
                   isScrolled ? "text-gray-800" : "text-black"
-                } hover:text-blue-200 active:text-gray-500 text-xs`}
+                } hover:text-gray-400 active:text-gray-500 text-xs`}
               >
                 {" "}
                 {link.label}

@@ -157,15 +157,20 @@ const MyForm = () => {
                   <SelectValue placeholder="Subject" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="poetry-reading">Poetry Reading</SelectItem>
-                  <SelectItem value="live-stream">
-                    Live Stream Access
+                  <SelectItem value="demo-booking">Book a Demo</SelectItem>
+                  <SelectItem value="pricing-inquiry">
+                    Pricing Inquiry
                   </SelectItem>
-                  <SelectItem value="event-booking">Event Booking</SelectItem>
-                  <SelectItem value="collaboration">
-                    Collaboration Request
+                  <SelectItem value="feature-request">
+                    Feature Request
                   </SelectItem>
-                  <SelectItem value="publishing">Publishing Inquiry</SelectItem>
+                  <SelectItem value="technical-support">
+                    Technical Support
+                  </SelectItem>
+                  <SelectItem value="partnership">
+                    Partnership or Collaboration
+                  </SelectItem>
+                  <SelectItem value="billing">Billing & Payments</SelectItem>
                   <SelectItem value="general">General Inquiry</SelectItem>
                 </SelectContent>
               </Select>
