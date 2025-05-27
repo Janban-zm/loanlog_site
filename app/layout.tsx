@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Meet Loan Log — Smarter Loan Tracking at Your Fingertips",
+  title: "Loan Log — Smarter Loan Tracking at Your Fingertips",
   description:
     "Loan Log helps you onboard quickly and manage all your loans in one place. Say goodbye to missed payments and confusion — your financial clarity starts now.",
 };

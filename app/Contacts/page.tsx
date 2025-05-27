@@ -32,36 +32,33 @@ export default function ContactPage() {
           }
         >
           <h1 className={"text-3xl font-black text-blue-950"}>Contacts</h1>
-          <p className={"text-xm lg:text-xl  text-center text-blue-400"}>
+          <p className={"text-lg lg:text-xl  text-center text-blue-400"}>
             Get in touch
           </p>
         </section>
       </header>
 
       {/* Main Content */}
-      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto">
+      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto max-h-max">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
           {/* right Section - Contact Form */}
           <div className="w-full bg-white rounded-lg shadow-sm p-6 md:p-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-              Send us a message
-            </h2>
             <Form />
           </div>
           {/* left Section - Intro & Contact Info */}
           <div className="space-y-10 pt-4">
             <div className="space-y-6">
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
+              <h2 className="text-2xl font-semibold text-blue-950">
                 Let’s Talk Loans & Lending
               </h2>
-              <p className="text-gray-600 leading-relaxed text-base md:text-lg">
+              <p className="text-gray-600 leading-relaxed text-base">
                 Have questions about how LoanLog works, pricing, or
                 partnerships? Our team is here to help. Reach out through the
                 form or connect with us directly using the details below.
               </p>
             </div>
 
-            <div className="bg-gray-50 rounded-lg p-6 md:p-8">
+            <div className="rounded-lg p-6 md:p-8">
               <h3 className="text-xl font-medium text-gray-800 mb-6">
                 Contact Us
               </h3>
@@ -77,7 +74,7 @@ export default function ContactPage() {
                         <p className="text-sm text-gray-500 font-medium">
                           {item.label}
                         </p>
-                        <span className="text-gray-700 text-base md:text-lg">
+                        <span className="text-gray-700 text-base">
                           {item.value}
                         </span>
                       </div>
