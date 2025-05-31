@@ -70,7 +70,7 @@ const pricingPlans: PricingPlan[] = [
 
 export function Pricing() {
   return (
-    <div className="max-w-[70vw] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-8">
+    <div className="lg:max-w-[70vw] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-8">
       {pricingPlans.map((plan, index) => (
         <motion.div
           key={index}

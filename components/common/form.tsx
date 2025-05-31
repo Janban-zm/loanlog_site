@@ -27,8 +27,9 @@ interface ApiResponse {
   error?: string;
 }
 
-const MyForm_Api = "http://178.128.41.137:5000/send-email"; // production email api
-//const MyForm_Api = "http://localhost:5000/send-email"; // local email api
+const MyForm_Api = process.env.NEXT_PUBLIC_EMAIL_ENDPOINT || "";
+const WebsiteID = process.env.NEXT_PUBLIC_WEBSITE_ALLOWED || "";
+const WebsiteAPI = process.env.NEXT_PUBLIC_WEBSITE_ALLOWED_API || "";
 
 const MyForm = () => {
   // State to manage form input values
@@ -78,9 +79,8 @@ const MyForm = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          websiteID: "loanlog", // Identifier for the website
-          apiKey:
-            "dd51f6eee52627e20c4f7cf27eaf790ef1ae432088cc25a633ef1eb96e2703a8", // API key for authentication
+          websiteID: WebsiteID, // Identifier for the website
+          apiKey: WebsiteAPI, // API key for authentication
           senderName: formData.name,
           senderEmail: formData.email,
           subject: formData.subject,
