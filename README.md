@@ -69,43 +69,23 @@ Streamline your operations:
 4. **Team Training** - Comprehensive onboarding for your staff
 5. **Go Live** - Launch with full support and monitoring
 
-### Integration Capabilities
-Loan Log integrates with your existing systems:
-- **Core Banking Systems** - Seamless data synchronization
-- **Credit Bureaus** - Real-time credit report integration
-- **Payment Processors** - Automated payment collection
-- **Accounting Software** - Financial reporting integration
-- **Document Management** - Secure file storage and retrieval
 
 ### About This Repository
 This repository contains the public-facing website for Loan Log. Here you can:
 
 - **Learn About Loan Log** - Explore features and capabilities
 - **Request a Demo** - See the application in action
-- **Get Information** - Access documentation and guides  
+- **Get Information** - Access documentation and guides
 - **Contact Us** - Reach out for questions or support
 
 *Note: This is an informational site only. The main Loan Log application is hosted separately and requires account access.*
-
-## 🛡️ Security & Compliance
-
-Enterprise-grade security for financial institutions:
-
-- **Bank-Level Security** - SOC 2 Type II certified infrastructure
-- **Data Encryption** - End-to-end encryption for all sensitive data
-- **Regulatory Compliance** - Built-in compliance for FFIEC, GDPR, CCPA
-- **Audit Trails** - Complete activity logging and audit capabilities
-- **Access Controls** - Role-based permissions and multi-factor authentication
-- **Business Continuity** - 99.9% uptime SLA with disaster recovery
 
 ## 🔧 Technology Stack
 
 Enterprise-ready architecture built for scale:
 
-- **Cloud Infrastructure** - AWS/Azure with auto-scaling capabilities
-- **Microservices Architecture** - Resilient, maintainable system design
+- **Cloud Infrastructure** - Digital Ocean with auto-scaling capabilities
 - **Real-time Processing** - Instant updates and notifications
-- **API-First Design** - Comprehensive REST and GraphQL APIs
 - **Database** - Enterprise-grade database with automated backups
 - **Monitoring** - 24/7 system monitoring and performance optimization
 
@@ -113,17 +93,7 @@ Enterprise-ready architecture built for scale:
 
 - **Web Application** - Full-featured browser-based platform
 - **Mobile Access** - Responsive design for mobile management
-- **API Access** - Complete programmatic access for integrations
 - **White-Label Options** - Customizable branding for your organization
-
-## 🤝 Get In Touch
-
-Ready to transform your lending operations?
-
-- **📧 Schedule Demo** - [demo@loanlog.app](mailto:demo@loanlog.app)
-- **💼 Sales Inquiries** - [sales@loanlog.app](mailto:sales@loanlog.app)
-- **🔧 Technical Questions** - [support@loanlog.app](mailto:support@loanlog.app)
-- **📋 Custom Solutions** - [enterprise@loanlog.app](mailto:enterprise@loanlog.app)
 
 ## 📞 Support & Services
 
@@ -131,7 +101,6 @@ Comprehensive support for your lending organization:
 
 - **24/7 Technical Support** - Always available when you need us
 - **Implementation Services** - Expert guidance for smooth deployment
-- **Training Programs** - Comprehensive staff training and certification
 - **Custom Development** - Tailored features for your specific needs
 - **Regulatory Updates** - Stay current with changing compliance requirements
 
@@ -143,15 +112,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🚀 Ready to Scale Your Lending Operations?
 
-[**Schedule Demo**](https://loanlog.app/demo) | [**Request Pricing**](https://loanlog.app/pricing) | [**View Documentation**](https://docs.loanlog.app)
-
----
-
-**Loan Log** - *Empowering lending organizations to grow with confidence.*
-
-[![Follow us](https://img.shields.io/badge/Follow-@LoanLog-blue)](https://twitter.com/loanlog)
-[![Join Community](https://img.shields.io/badge/Community-Discord-purple)](https://discord.gg/loanlog)
-[![Email Updates](https://img.shields.io/badge/Updates-Subscribe-green)](https://loanlog.app/newsletter)
+[**Schedule Demo**](https://loanlog.com/demo) | [**Request Pricing**](https://loanlog.com/#Price) | [**View Documentation**](https://docs.loanlog.com)
 
 ---
 
