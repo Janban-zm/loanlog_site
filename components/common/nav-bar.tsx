@@ -57,7 +57,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
   return (
     <div
       className={`fixed top-0  left-0 right-0 w-screen z-50 transition-all duration-300 ${
-        isDesktop ? (isScrolled ? "bg-white" : "bg-transparent") : "bg-white" // Always white on mobile
+        isScrolled ? "bg-white" : "bg-white/10 backdrop-blur-xl" // Always blur
       }`}
     >
       <div className="relative flex items-center justify-between py-4 px-8 lg:px-40">

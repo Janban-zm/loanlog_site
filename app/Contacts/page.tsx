@@ -67,7 +67,7 @@ export default function ContactPage() {
                   const Icon = item.icon;
                   return (
                     <li key={index} className="flex items-center gap-4">
-                      <div className="bg-blue-100 p-3 rounded-full">
+                      <div className="bg-blue-100 p-3 rounded-lg">
                         <Icon className="text-blue-600 w-5 h-5 shrink-0" />
                       </div>
                       <div>

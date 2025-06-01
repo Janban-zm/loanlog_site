@@ -62,7 +62,7 @@ export default function Home() {
         </section>
         <section
           id="Prices"
-          className="w-full bg-blue-400 flex flex-col justify-center items-center p-4"
+          className="w-full bg-blue-950 flex flex-col justify-center items-center p-4"
         >
           <div className="w-full lg:w-[70vw] text-center lg:text-start px-4 flex flex-col items-center lg:items-start">
             <h2 className="text-xl lg:text-3xl font-bold max-w-xl text-white">
