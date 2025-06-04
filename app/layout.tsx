@@ -24,9 +24,9 @@ export const metadata: Metadata = {
 const linksData = [
   { label: "Home", href: "/" },
   { label: "Contacts", href: "/Contacts" },
-  //{ label: "Documentation", href: "/Documentation" },
+  { label: "Documentation", href: "/Documentation" },
+  { label: "Features", href: "/Features" },
   { label: "Pricing", href: "/#Prices" },
-  { label: "FAQs", href: "/#Faq" },
 ];
 
 export default function RootLayout({

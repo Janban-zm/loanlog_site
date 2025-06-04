@@ -24,7 +24,7 @@ const data = [
 
 export function WhyChoose() {
   return (
-    <div className="w-full bg-white text-blue-950">
+    <div className="w-full text-blue-950">
       <div className="grid gap-6 grid-cols-1 lg:grid-cols-3 auto-rows-min px-4 ">
         {data.map((item, index) => {
           const Icon = item.icon;

@@ -18,19 +18,19 @@ const data = {
 export function Hero() {
   return (
     <div className="w-full bg-[url('/bg.svg')] bg-cover bg-center h-max p-4 flex justify-center items-center">
-      <div className="h-max lg:h-[60dvh] w-full lg:w-[70vw] grid grid-cols-1 lg:grid-cols-2 gap-4 my-16">
+      <div className="h-max lg:h-[60dvh] w-full lg:w-[70vw] grid grid-cols-1 justify-center items-center gap-4 my-16">
         {/* Text Section */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full h-full flex flex-col justify-center lg:items-start items-center gap-10"
+          className="w-full h-full flex flex-col justify-center items-center gap-10"
         >
-          <div className="w-full space-y-4">
-            <h1 className="text-center lg:text-start text-4xl font-bold text-blue-950">
+          <div className="w-full space-y-4 lg:w-[50vw]">
+            <h1 className="text-center  text-4xl font-bold text-blue-950">
               {data.title}
             </h1>
-            <p className="text-center lg:text-start">{data.description}</p>
+            <p className="text-center">{data.description}</p>
           </div>
 
           <div className="w-full flex gap-2 max-w-max justify-center items-center">
@@ -48,21 +48,18 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-          className="w-full h-full flex flex-col justify-center lg:items-start items-center gap-10"
+          className="w-full h-full flex flex-col justify-center items-center gap-10"
         >
-          <motion.div
-            whileHover={{ scale: 1.05, rotate: 2 }}
-            transition={{ type: "spring", stiffness: 200 }}
-          >
+          <div className="max-w-[700px]">
             <Image
               src={data.image_Url}
               alt={data.image_alt}
-              width={800}
-              height={500}
-              className="rounded border-2 shadow-lg border-blue-950 transition-all"
+              width={1080}
+              height={675} // Keep the same aspect ratio (16:10 or 16:9)
+              className="w-full h-auto rounded border-2 shadow-lg border-blue-950 transition-all"
               priority
             />
-          </motion.div>
+          </div>
         </motion.section>
       </div>
     </div>
