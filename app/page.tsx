@@ -47,12 +47,15 @@ export default function Home() {
         <section className="lg:w-[70vw] p-4 lg:p-8">
           <WhyChoose />
         </section>
-        <section id="Features" className="w-full p-4 lg:w-[80vw]">
-          <div className="w-full text-center lg:text-end px-4 flex flex-col items-center lg:items-end">
+        <section
+          id="Features"
+          className="w-full flex flex-col justify-center items-center p-4 lg:w-[80vw]"
+        >
+          <div className="w-full text-center  px-4 flex flex-col items-center justify-center lg:w-[50vw]">
             <h2 className="text-xl lg:text-3xl font-bold max-w-xl text-blue-900">
               Tools that power smarter, faster lending
             </h2>
-            <p className="mt-2 text-gray-600 text-sm lg:text-lg lg:text-end">
+            <p className="mt-2 text-gray-600 text-sm lg:text-lg text-center">
               From automated calculations to downloadable reports, our system is
               built to streamline every step of the loan process — so you can
               focus more on growth, not admin.
@@ -62,13 +65,13 @@ export default function Home() {
         </section>
         <section
           id="Prices"
-          className="w-full bg-blue-950 flex flex-col justify-center items-center p-4"
+          className="w-full bg-blue-950 flex flex-col justify-center items-center p-4 "
         >
-          <div className="w-full lg:w-[80vw] text-center lg:text-start px-4 flex flex-col items-center lg:items-start">
-            <h2 className="text-xl lg:text-3xl font-bold max-w-xl text-white">
+          <div className="w-full lg:w-[50vw] text-center  px-4 flex flex-col items-center">
+            <h2 className="text-xl lg:text-3xl font-bold max-w-xl text-white text-center">
               Flexible Pricing for Every Growth Stage
             </h2>
-            <p className="mt-2 text-gray-200 text-sm lg:text-lg lg:text-start">
+            <p className="mt-2 text-gray-200 text-sm lg:text-lg text-center">
               Whether you are just getting started or scaling fast, our plans
               are designed to meet your needs — with powerful tools, support,
               and features tailored to how you work.
