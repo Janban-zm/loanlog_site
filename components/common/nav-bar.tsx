@@ -56,8 +56,10 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
 
   return (
     <div
-      className={`fixed top-0  left-0 right-0 w-screen z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white" : "bg-white/10 backdrop-blur-xl" // Always blur
+      className={`${
+        isScrolled ? "fixed top-0 left-0 right-0 z-50" : "relative"
+      } w-full transition-all duration-300 ${
+        isScrolled ? "bg-blue-300" : "bg-white/10 backdrop-blur-sm"
       }`}
     >
       <div className="relative flex items-center justify-between py-4 px-8 lg:px-40">
@@ -72,7 +74,9 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
               className="shadow-md"
             />
             <h2
-              className={`ml-2 text-lg font-extrabold hidden lg:block  ${isScrolled ? "text-blue-500" : "text-blue-700"} `}
+              className={`ml-2 text-lg font-extrabold hidden lg:block  ${
+                isScrolled ? "text-white" : "text-blue-950"
+              } `}
             >
               {"LOANLOG"}
             </h2>
@@ -86,9 +90,9 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
             onClick={toggleMenu}
           >
             {isOpen ? (
-              <FiX className={`w-6 h-6 text-gray-800 hover:text-sky-500`} />
+              <FiX className={`w-6 h-6 text-white hover:text-sky-500`} />
             ) : (
-              <FiMenu className={`w-6 h-6 text-gray-800 hover:text-sky-500`} />
+              <FiMenu className={`w-6 h-6 text-white hover:text-sky-500`} />
             )}
           </button>
         )}
@@ -100,8 +104,8 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
               <Button
                 variant="link"
                 className={`${
-                  isScrolled ? "text-gray-800" : "text-black"
-                } hover:text-gray-400 active:text-gray-500 text-xs`}
+                  isScrolled ? "text-white" : "text-black"
+                } hover:text-blue-400 active:text-gray-500 text-xs`}
               >
                 {" "}
                 {link.label}

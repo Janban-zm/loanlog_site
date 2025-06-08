@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import NavLinks from "@/components/common/nav-bar";
 import Footer from "@/components/common/footer";
 import { Toaster } from "@/components/ui/toaster";
@@ -25,7 +25,7 @@ const linksData = [
   { label: "Home", href: "/" },
   { label: "Contacts", href: "/Contacts" },
   { label: "Documentation", href: "/Documentation" },
-  { label: "Features", href: "/Features" },
+  { label: "Features", href: "/#Features" },
   { label: "Pricing", href: "/#Prices" },
 ];
 

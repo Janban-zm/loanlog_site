@@ -19,8 +19,8 @@ const links: LinkProps[] = [
   { name: "Home", link: "/" },
   { name: "Contacts", link: "/Contacts" },
   { name: "Documentation", link: "/Documentation" },
-  { name: "Features", link: "/Features" },
-  { name: "FAQs", link: "/#Faq" },
+  { name: "Features", link: "/#Features" },
+  { name: "FAQs", link: "/Faq" },
   { name: "Pricing", link: "/#Prices" },
   { name: "Terms and Conditions", link: "/Terms" },
 ];

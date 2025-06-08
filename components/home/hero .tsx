@@ -18,7 +18,7 @@ const data = {
 export function Hero() {
   return (
     <div className="w-full bg-[url('/bg.svg')] bg-cover bg-center h-max p-4 flex justify-center items-center">
-      <div className="h-max lg:h-[60dvh] w-full lg:w-[70vw] grid grid-cols-1 justify-center items-center gap-4 my-16">
+      <div className="h-3/4 lg:h-[60dvh] w-full lg:w-[70vw] grid grid-cols-1 justify-center items-center gap-4 my-16">
         {/* Text Section */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-          className="w-full h-full flex flex-col justify-center items-center gap-10"
+          className="w-full h-full lg:flex flex-col justify-center items-center gap-10 hidden"
         >
           <div className="max-w-[700px]">
             <Image
