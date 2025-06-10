@@ -8,28 +8,47 @@ import { motion } from "framer-motion";
 const data = {
   title: "Built for Growing Lenders with Big Dreams",
   description:
-    "Loan Log makes loan management simple and affordable. Built for small to mid-sized lenders, it helps you onboard clients, track repayments, and grow your business — all from one smart platform.",
+    "loanlytix makes loan management simple and affordable. Built for small to mid-sized lenders, it helps you onboard clients, track repayments, and grow your business — all from one smart platform.",
   link_One: "tel:+260771923958",
   link_Two: "/Contacts",
   image_Url: "/loanlog.svg",
   image_alt: "Loan Log Dashboard Preview",
 };
 
+const parts = data.title.split(/(Growing Lenders|Big Dreams)/);
+
 export function Hero() {
   return (
     <div className="w-full bg-[url('/bg.svg')] bg-cover bg-center h-max p-4 flex justify-center items-center">
-      <div className="h-3/4 lg:h-[60dvh] w-full lg:w-[70vw] grid grid-cols-1 justify-center items-center gap-4 my-16">
+      <div className="h-3/4 lg:h-[60dvh] w-full lg:w-[70vw] grid grid-cols-1 justify-center items-center gap-4 my-10">
         {/* Text Section */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full h-full flex flex-col justify-center items-center gap-10">
+          className="w-full h-full flex flex-col justify-center items-center gap-10"
+        >
           <div className="w-full space-y-4 lg:w-[50vw]">
             <h1 className="text-center  text-4xl font-bold text-blue-950">
-              {data.title}
+              {parts.map((part, i) => {
+                if (part === "Growing Lenders") {
+                  return (
+                    <span key={i} className="text-blue-500 relative">
+                      {part}
+                    </span>
+                  );
+                } else if (part === "Big Dreams") {
+                  return (
+                    <span key={i} className="text-blue-500 relative">
+                      {part}
+                    </span>
+                  );
+                } else {
+                  return <span key={i}>{part}</span>;
+                }
+              })}
             </h1>
-            <p className="text-center">{data.description}</p>
+            <p className="text-center text-gray-800">{data.description}</p>
           </div>
 
           <div className="w-full flex gap-2 max-w-max justify-center items-center">
@@ -47,16 +66,19 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-          className="w-full h-full flex flex-col justify-center items-center gap-10">
-          <div className="max-w-[700px]">
+          className="w-full h-full flex flex-col justify-center items-center gap-10"
+        >
+          <div className="max-w-[700px] relative">
             <Image
               src={data.image_Url}
               alt={data.image_alt}
               width={1080}
-              height={675} // Keep the same aspect ratio (16:10 or 16:9)
-              className="w-full h-auto rounded border-2 shadow-lg border-blue-950 transition-all"
+              height={675}
+              className="w-full h-auto rounded border-2  border-blue-950 transition-all"
               priority
             />
+            {/* Stronger and longer fade to white */}
+            <div className="absolute bottom-0 left-0 w-full h-[25vh] bg-gradient-to-t from-white via-white/90 to-transparent pointer-events-none rounded-b transition-all" />
           </div>
         </motion.section>
       </div>

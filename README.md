@@ -1,12 +1,12 @@
-# Loan Log 💰
+# Loanlytix 💰
 
 **Enterprise Loan Management Platform for Growing Organizations**
 
 Welcome to Loan Log - a comprehensive loan portfolio management system designed specifically for startup to mid-size lending organizations who need powerful tools to manage their loan operations efficiently and scale their business.
 
-## 🌟 What is Loan Log?
+## 🌟 What is Loanlytix?
 
-Loan Log is a powerful, enterprise-grade loan management platform that streamlines lending operations by providing:
+Loanlytix is a powerful, enterprise-grade loan management platform that streamlines lending operations by providing:
 
 - **Portfolio Management** - Comprehensive oversight of your entire loan portfolio
 - **Borrower Management** - Centralized customer relationship and communication tools
@@ -112,7 +112,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🚀 Ready to Scale Your Lending Operations?
 
-[**Schedule Demo**](https://loanlog.com/demo) | [**Request Pricing**](https://loanlog.com/#Price) | [**View Documentation**](https://docs.loanlog.com)
+[**Schedule Demo**](https://Loanlytix.com/Contacts) | [**Request Pricing**](https://Loanlytix.com/#Price) | [**View Documentation**](https://docs.Loanlytix.com/Documentation)
 
 ---
 

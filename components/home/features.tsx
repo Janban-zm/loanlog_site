@@ -58,7 +58,7 @@ const fadeRight = {
 
 export function Features() {
   return (
-    <section className="w-full px-4 py-12 flex justify-center items-center bg-white">
+    <section className="w-full px-4 py-12 flex justify-center items-center bg-white lg:rounded-md lg:shadow-md">
       <Tabs
         defaultValue={featureItems[0].value}
         className="w-full max-w-6xl flex flex-col items-center"

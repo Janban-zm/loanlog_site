@@ -74,7 +74,7 @@ export function Pricing() {
       {pricingPlans.map((plan, index) => (
         <motion.div
           key={index}
-          className="border p-6 rounded-2xl shadow-md bg-white flex flex-col justify-between h-full min-h-[400px]"
+          className="border p-6 rounded-2xl shadow-sm bg-white/90 hover:shadow-lg transition-all flex flex-col justify-between h-full min-h-[400px] backdrop-blur"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -85,7 +85,12 @@ export function Pricing() {
             <h3 className={`text-xl font-semibold mb-2 ${plan.color}`}>
               {plan.name}
             </h3>
-            <p className="text-sm text-gray-500 mb-4">{plan.price}</p>
+            <p className="text-2xl font-bold text-gray-900 mb-4">
+              <span className="text-base font-medium text-gray-500">
+                Starting at{" "}
+              </span>
+              {plan.price}
+            </p>
             <ul className="space-y-2">
               {plan.features.map((feature, i) => (
                 <li
@@ -99,8 +104,7 @@ export function Pricing() {
             </ul>
           </div>
           <Link href={"/Contacts"}>
-            {" "}
-            <Button className="w-full">Get Started</Button>
+            <Button className="w-full mt-6">Get Started</Button>
           </Link>
         </motion.div>
       ))}

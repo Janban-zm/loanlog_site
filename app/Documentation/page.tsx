@@ -1,13 +1,38 @@
-// app/Documentation/page.tsx
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  initial: { opacity: 0, y: 30 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
+const sectionVariant = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
 
 export default function DocumentationPage() {
   return (
     <div className="w-full lg:w-3/4 p-6 space-y-16 text-gray-600">
       {/* Welcome Section */}
-      <section className="space-y-4">
+      <motion.section
+        className="space-y-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariant}
+        custom={0}
+      >
         <h1 className="text-4xl font-bold text-blue-400">
           Welcome to the Platform
         </h1>
@@ -28,7 +53,10 @@ export default function DocumentationPage() {
           then selecting <strong>“Install App”</strong>. This enables quicker
           access and a native feel similar to mobile apps.
         </p>
-        <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+        <motion.div
+          {...fadeInUp}
+          className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full"
+        >
           <Image
             src="/screenshots/install.png"
             alt="install webapp"
@@ -40,17 +68,25 @@ export default function DocumentationPage() {
           <p className="mt-2 text-gray-400 text-xs">
             Screenshot: install webapp
           </p>
-        </div>
+        </motion.div>
         <p className="text-lg leading-relaxed">
           This comprehensive guide will assist you in navigating the platform’s
           features including registration, login, role management, and penalty
           setup. Follow each step carefully to ensure correct configuration and
           usage.
         </p>
-      </section>
+      </motion.section>
 
       {/* Register Section */}
-      <section id="register" className="space-y-4">
+      <motion.section
+        id="register"
+        className="space-y-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariant}
+        custom={0}
+      >
         <h2 className="text-2xl font-semibold text-blue-300">1. Register</h2>
         <p className="leading-relaxed">
           Before accessing the platform’s features, every user is required to
@@ -76,7 +112,10 @@ export default function DocumentationPage() {
               is often used for staff or privileged users who require immediate
               access without going through the self-registration process.
             </p>
-            <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+            <motion.div
+              {...fadeInUp}
+              className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full"
+            >
               <Image
                 src="/screenshots/start.png"
                 alt="Start page"
@@ -88,7 +127,7 @@ export default function DocumentationPage() {
               <p className="mt-2 text-gray-400 text-xs">
                 Screenshot: Start page
               </p>
-            </div>
+            </motion.div>
           </li>
 
           <li>
@@ -99,7 +138,10 @@ export default function DocumentationPage() {
               details, your account will be set to a <em>pending approval</em>{" "}
               status until it is reviewed and authorized by an administrator.
             </p>
-            <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+            <motion.div
+              {...fadeInUp}
+              className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full"
+            >
               <Image
                 src="/screenshots/register.png"
                 alt="Self registration on login page"
@@ -111,7 +153,7 @@ export default function DocumentationPage() {
               <p className="mt-2 text-gray-400 text-xs">
                 Screenshot: Self registration on login page
               </p>
-            </div>
+            </motion.div>
           </li>
         </ul>
         <p className="text-sm text-gray-400 mt-4">
@@ -119,10 +161,18 @@ export default function DocumentationPage() {
           administrator, you will not be able to log in or access any platform
           features.
         </p>
-      </section>
+      </motion.section>
 
       {/* Login Section */}
-      <section id="login" className="space-y-4">
+      <motion.section
+        id="login"
+        className="space-y-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariant}
+        custom={0}
+      >
         <h2 className="text-2xl font-semibold text-blue-300">2. Login</h2>
         <p className="leading-relaxed">
           After your account has been approved, you will be able to log in using
@@ -135,7 +185,10 @@ export default function DocumentationPage() {
           dashboard where you can manage loans, view notifications, and adjust
           your settings.
         </p>
-        <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+        <motion.div
+          {...fadeInUp}
+          className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full"
+        >
           <Image
             src="/screenshots/login.png"
             alt="loging in with your credentials"
@@ -147,10 +200,19 @@ export default function DocumentationPage() {
           <p className="mt-2 text-gray-400 text-xs">
             Screenshot: loging in with your credentials
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
+
       {/* Dashbord  Section */}
-      <section id="dashboard" className="space-y-4">
+      <motion.section
+        id="dashboard"
+        className="space-y-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariant}
+        custom={0}
+      >
         <h2 className="text-2xl font-semibold text-blue-300">
           3. The Dashboard
         </h2>
@@ -166,7 +228,10 @@ export default function DocumentationPage() {
           designed for clarity and efficiency to help you manage everything at a
           glance.
         </p>
-        <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+        <motion.div
+          {...fadeInUp}
+          className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full"
+        >
           <Image
             src="/screenshots/dashboard.png"
             alt="Dashboard overview"
@@ -178,11 +243,19 @@ export default function DocumentationPage() {
           <p className="mt-2 text-gray-400 text-xs">
             Screenshot: Dashboard overview
           </p>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
       {/* Penalty Percentage Section */}
-      <section id="penalty" className="space-y-4">
+      <motion.section
+        id="penalty"
+        className="space-y-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariant}
+        custom={0}
+      >
         <h2 className="text-2xl font-semibold text-blue-300">
           4. Set Penalty Percentage
         </h2>
@@ -197,7 +270,10 @@ export default function DocumentationPage() {
           payments will incur an additional 5% charge on the outstanding amount,
           calculated daily or monthly depending on platform settings.
         </p>
-        <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+        <motion.div
+          {...fadeInUp}
+          className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full"
+        >
           <Image
             src="/screenshots/penalty.png"
             alt="Self registration on login page"
@@ -209,12 +285,12 @@ export default function DocumentationPage() {
           <p className="mt-2 text-gray-400 text-xs">
             Screenshot: penalty rate settigs
           </p>
-        </div>
+        </motion.div>
         <p className="text-sm text-gray-400">
           <strong>Note:</strong> This penalty rate applies globally and affects
           all loans created following this configuration.
         </p>
-      </section>
+      </motion.section>
     </div>
   );
 }

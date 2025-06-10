@@ -24,7 +24,9 @@ export default function ContactPage() {
     <div className="w-full">
       {/* Hero Header */}
       <header
-        className={"text-center w-full  bg-[url('/bg.svg')] bg-cover bg-center"}
+        className={
+          "text-center w-full bg-white bg-[url('/bg.svg')] bg-cover bg-center"
+        }
       >
         <section
           className={
@@ -39,7 +41,7 @@ export default function ContactPage() {
       </header>
 
       {/* Main Content */}
-      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto max-h-max -mt-20 bg-white rounded-sm">
+      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto max-h-max -mt-20 bg-white rounded-sm mb-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
           {/* right Section - Contact Form */}
           <div className="w-full bg-transparent p-2 md:p-8">

@@ -39,12 +39,14 @@ export default function FaqPage() {
       {/* Hero Header */}
       <header
         className={
-          "text-center w-full  bg-[url('/bg.svg')] bg-cover bg-center"
-        }>
+          "text-center w-full bg-white  bg-[url('/bg.svg')] bg-cover bg-center"
+        }
+      >
         <section
           className={
             "flex flex-col text-white justify-center items-center h-[30dvh] lg:h-[25dvh]"
-          }>
+          }
+        >
           <h1 className={"text-3xl font-black text-blue-950"}>FAQs</h1>
           <p className={"text-lg lg:text-xl  text-center text-blue-400"}>
             frequently asked questions
@@ -53,7 +55,7 @@ export default function FaqPage() {
       </header>
 
       {/* Main Content */}
-      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto max-h-max my-5 bg-white rounded-sm">
+      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto max-h-max mb-20 -mt-10 bg-white rounded-sm">
         {" "}
         <Accordion items={faqItems} />
       </section>

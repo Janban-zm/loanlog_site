@@ -7,13 +7,26 @@ export const metadata: Metadata = {
 
 const TermsOfUse = () => {
   return (
-    <div className="w-full h-full flex justify-center items-center my-16">
-      <div className=" mx-auto p-6 ">
-        <header className="flex flex-col justify-center items-center space-y-2 mb-5">
-          <h1 className="text-3xl font-bold mb-4 text-center">Terms of Use</h1>
-        </header>
-        <section className="mt-10">
-          <main className="space-y-6 lg:max-w-[50vw]">
+    <div className="w-full h-full flex flex-col justify-center items-center">
+      <header
+        className={
+          "text-center w-full bg-white  bg-[url('/bg.svg')] bg-cover bg-center"
+        }
+      >
+        <section
+          className={
+            "flex flex-col text-white justify-center items-center h-[30dvh] lg:h-[25dvh]"
+          }
+        >
+          <h1 className={"text-3xl font-black text-blue-950"}>Terms Of Use</h1>
+          <p className={"text-lg lg:text-xl  text-center text-blue-400"}>
+            Terms and Conditions
+          </p>
+        </section>
+      </header>
+      <div className=" mx-auto p-6 bg-white -mt-20">
+        <section>
+          <main className="space-y-6 lg:max-w-[60vw] p-5">
             <section className="mb-6">
               <h2 className="text-xl font-semibold">
                 1. Subscription-Based Usage
