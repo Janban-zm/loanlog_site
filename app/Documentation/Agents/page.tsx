@@ -12,7 +12,7 @@ export default function DocumentationPage() {
           Welcome to the Platform
         </h1>
         <p className="text-lg leading-relaxed">
-          This comprehensive guide will assist you in navigating the platform’s
+          This comprehensive guide will assist you in navigating the platforms
           initial setup and usage processes. Whether you are a first-time user
           or an administrator overseeing account management, following these
           instructions carefully will ensure a smooth experience and correct
@@ -24,16 +24,15 @@ export default function DocumentationPage() {
       <section id="register" className="space-y-4">
         <h2 className="text-2xl font-semibold text-blue-300">1. Register</h2>
         <p className="leading-relaxed">
-          Before accessing the platform’s features, every user is required to
+          Before accessing the platforms features, every user is required to
           register an account. This step is essential for identity verification,
           secure authentication, and role assignment based on your
           responsibilities.
         </p>
         <p className="leading-relaxed">
-          Registration is carried out on the login screen via the "Create
-          Account" option, allowing new users to submit their details for
-          approval. Please note that this platform does not support direct
-          registration through external services such as Kinde.
+          Registration is carried out on the login screen via the{" "}
+          <em>Create Account</em> option, allowing new users to submit their
+          details for approval.
         </p>
         <p className="leading-relaxed">
           There are two ways to obtain an account:
@@ -63,9 +62,9 @@ export default function DocumentationPage() {
           <li>
             <p>
               <strong>Self Registration:</strong> If you do not have an existing
-              account, you can create one yourself by selecting the "Create
-              Account" link on the login page. After submitting your
-              registration details, your account will be set to a{" "}
+              account, you can create one yourself by selecting the{" "}
+              <em>Create Account</em> link on the login page. After submitting
+              your registration details, your account will be set to a{" "}
               <em>pending approval</em> status until it is reviewed and
               authorized by an administrator.
             </p>

@@ -1,4 +1,3 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Accordion from "@/components/common/accordion";
 
 const faqItems = [

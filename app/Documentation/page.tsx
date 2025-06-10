@@ -12,11 +12,40 @@ export default function DocumentationPage() {
           Welcome to the Platform
         </h1>
         <p className="text-lg leading-relaxed">
+          To begin using the platform, open your Chrome browser and visit:{" "}
+          <span className="text-blue-500 underline">
+            https://{"YourCompanyName"}.loanlytix.com
+          </span>{" "}
+          or{" "}
+          <span className="text-blue-500 underline">
+            https://YourCompanyName.com
+          </span>{" "}
+          (premium users)
+        </p>
+        <p className="text-lg leading-relaxed">
+          For the best experience, install the web app on your device. On
+          Chrome, you can do this by clicking the browser menu (three dots),
+          then selecting <strong>“Install App”</strong>. This enables quicker
+          access and a native feel similar to mobile apps.
+        </p>
+        <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+          <Image
+            src="/screenshots/install.png"
+            alt="install webapp"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+          <p className="mt-2 text-gray-400 text-xs">
+            Screenshot: install webapp
+          </p>
+        </div>
+        <p className="text-lg leading-relaxed">
           This comprehensive guide will assist you in navigating the platform’s
-          initial setup and usage processes. Whether you are a first-time user
-          or an administrator overseeing account management, following these
-          instructions carefully will ensure a smooth experience and correct
-          access configurations.
+          features including registration, login, role management, and penalty
+          setup. Follow each step carefully to ensure correct configuration and
+          usage.
         </p>
       </section>
 
@@ -50,7 +79,7 @@ export default function DocumentationPage() {
             <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
               <Image
                 src="/screenshots/start.png"
-                alt="Admin creating a user account"
+                alt="Start page"
                 width={0}
                 height={0}
                 sizes="100vw"
@@ -73,7 +102,7 @@ export default function DocumentationPage() {
             <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
               <Image
                 src="/screenshots/register.png"
-                alt="Admin creating a user account"
+                alt="Self registration on login page"
                 width={0}
                 height={0}
                 sizes="100vw"
@@ -109,14 +138,45 @@ export default function DocumentationPage() {
         <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
           <Image
             src="/screenshots/login.png"
-            alt="Admin creating a user account"
+            alt="loging in with your credentials"
             width={0}
             height={0}
             sizes="100vw"
             className="w-full h-auto"
           />
           <p className="mt-2 text-gray-400 text-xs">
-            Screenshot: logining in with your credentials
+            Screenshot: loging in with your credentials
+          </p>
+        </div>
+      </section>
+      {/* Dashbord  Section */}
+      <section id="dashboard" className="space-y-4">
+        <h2 className="text-2xl font-semibold text-blue-300">
+          3. The Dashboard
+        </h2>
+        <p className="text-sm text-gray-400">
+          <strong>Note:</strong> This is the first screen you will see after
+          logging in. It provides access to key configurations and gives a
+          high-level overview of the platforms loan management activity.
+        </p>
+        <p className="leading-relaxed">
+          The dashboard acts as your control center. From here, you can monitor
+          system stats, track loan statuses, and navigate to essential features
+          such as client management, loan setup, and reporting tools. It’s
+          designed for clarity and efficiency to help you manage everything at a
+          glance.
+        </p>
+        <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
+          <Image
+            src="/screenshots/dashboard.png"
+            alt="Dashboard overview"
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full h-auto"
+          />
+          <p className="mt-2 text-gray-400 text-xs">
+            Screenshot: Dashboard overview
           </p>
         </div>
       </section>
@@ -124,7 +184,7 @@ export default function DocumentationPage() {
       {/* Penalty Percentage Section */}
       <section id="penalty" className="space-y-4">
         <h2 className="text-2xl font-semibold text-blue-300">
-          3. Set Penalty Percentage
+          4. Set Penalty Percentage
         </h2>
         <p className="leading-relaxed">
           Setting the penalty percentage is a critical configuration step before
@@ -139,15 +199,15 @@ export default function DocumentationPage() {
         </p>
         <div className="mt-3 border border-gray-700 rounded-md p-4 bg-gray-900 text-sm w-full">
           <Image
-            src="/loanlog.svg"
-            alt="Admin creating a user account"
+            src="/screenshots/penalty.png"
+            alt="Self registration on login page"
             width={0}
             height={0}
             sizes="100vw"
             className="w-full h-auto"
           />
           <p className="mt-2 text-gray-400 text-xs">
-            Screenshot: Self registration on login page
+            Screenshot: penalty rate settigs
           </p>
         </div>
         <p className="text-sm text-gray-400">

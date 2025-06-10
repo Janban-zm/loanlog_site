@@ -78,7 +78,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
                 isScrolled ? "text-white" : "text-blue-950"
               } `}
             >
-              {"LOANLOG"}
+              {"loanlytix"}
             </h2>
           </div>
         </Link>

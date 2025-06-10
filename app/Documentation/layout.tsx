@@ -23,9 +23,9 @@ const geistMono = Geist_Mono({
 
 // Meta information
 export const metadata: Metadata = {
-  title: "Loan Log — Documentation",
+  title: "Loanlytix — Documentation",
   description:
-    "Loan Log helps you onboard quickly and manage all your loans in one place. Say goodbye to missed payments and confusion — your financial clarity starts now.",
+    "Welcome to the Loanlytix documentation. Learn how to get started, integrate features, and manage loans effectively with our intuitive, developer-friendly platform. From onboarding to advanced configurations — everything you need is right here.",
 };
 
 // Footer data

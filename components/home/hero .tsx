@@ -24,8 +24,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full h-full flex flex-col justify-center items-center gap-10"
-        >
+          className="w-full h-full flex flex-col justify-center items-center gap-10">
           <div className="w-full space-y-4 lg:w-[50vw]">
             <h1 className="text-center  text-4xl font-bold text-blue-950">
               {data.title}
@@ -48,8 +47,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
-          className="w-full h-full lg:flex flex-col justify-center items-center gap-10 hidden"
-        >
+          className="w-full h-full flex flex-col justify-center items-center gap-10">
           <div className="max-w-[700px]">
             <Image
               src={data.image_Url}
