@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('/bg2.svg')] bg-cover`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-muted`}
       >
         <NavLinks links={linksData} logoSrc="/logo.svg" />
         {children}

@@ -74,7 +74,7 @@ export function Pricing() {
       {pricingPlans.map((plan, index) => (
         <motion.div
           key={index}
-          className="border p-6 rounded-2xl shadow-sm bg-white/90 hover:shadow-lg transition-all flex flex-col justify-between h-full min-h-[400px] backdrop-blur"
+          className="border p-6 rounded-2xl shadow-sm bg-white hover:shadow-lg transition-all flex flex-col justify-between h-full min-h-[400px] backdrop-blur"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
