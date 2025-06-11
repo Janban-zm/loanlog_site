@@ -33,11 +33,9 @@ export default function DocumentationPage() {
         variants={sectionVariant}
         custom={0}
       >
-        <h1 className="text-4xl font-bold text-blue-400">
-          Welcome to the Platform
-        </h1>
+        <h1 className="text-4xl font-bold text-blue-400">Getting Started</h1>
         <p className="text-lg leading-relaxed">
-          To begin using the platform, open your Chrome browser and visit:{" "}
+          To begin using the System, open your Chrome browser and visit:{" "}
           <span className="text-blue-500 underline">
             https://{"YourCompanyName"}.loanlytix.com
           </span>{" "}

@@ -16,7 +16,7 @@ export function SiteHeader() {
         <div className="ml-auto flex items-center gap-2">
           {" "}
           <Button size="sm">
-            <Link href={"/"}> Home</Link>
+            <Link href={"/"}> Website </Link>
           </Button>
         </div>
       </div>

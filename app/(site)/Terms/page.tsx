@@ -1,33 +1,50 @@
-import type { Metadata } from "next";
+"use client";
+import { motion } from "framer-motion";
 
-export const metadata: Metadata = {
-  title: "Creative Bunch - terms of use",
-  description: "the terms of use for this web app ",
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2, delayChildren: 0.2 },
+  },
 };
 
-const TermsOfUse = () => {
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6 },
+  },
+};
+
+export default function termsPage() {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center">
-      <header
-        className={
-          "text-center w-full bg-white  bg-[url('/bg.svg')] bg-cover bg-center"
-        }
+    <motion.div
+      className="w-full h-full flex flex-col justify-center items-center"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      {/* Header */}
+      <motion.header
+        className="text-center w-full bg-white bg-[url('/bg.svg')] bg-cover bg-center"
+        variants={itemVariants}
       >
-        <section
-          className={
-            "flex flex-col text-white justify-center items-center h-[30dvh] lg:h-[25dvh]"
-          }
-        >
-          <h1 className={"text-3xl font-black text-blue-950"}>Terms Of Use</h1>
-          <p className={"text-lg lg:text-xl  text-center text-blue-400"}>
+        <section className="flex flex-col text-white justify-center items-center h-[30dvh] lg:h-[25dvh]">
+          <h1 className="text-3xl font-black text-blue-950">Terms Of Use</h1>
+          <p className="text-lg lg:text-xl text-center text-blue-400">
             Terms and Conditions
           </p>
         </section>
-      </header>
-      <div className=" mx-auto p-6 bg-white -mt-20">
+      </motion.header>
+
+      {/* Content */}
+      <motion.div className="mx-auto p-6" variants={itemVariants}>
         <section>
           <main className="space-y-6 lg:max-w-[60vw] p-5">
-            <section className="mb-6">
+            <motion.section className="mb-6" variants={itemVariants}>
               <h2 className="text-xl font-semibold">
                 1. Subscription-Based Usage
               </h2>
@@ -37,9 +54,9 @@ const TermsOfUse = () => {
                 No customization or branding requests are allowed under this
                 model. Hosting and updates are managed by the developer.
               </p>
-            </section>
+            </motion.section>
 
-            <section className="mb-6">
+            <motion.section className="mb-6" variants={itemVariants}>
               <h2 className="text-xl font-semibold">
                 2. Leasing (6-Months or More)
               </h2>
@@ -49,9 +66,9 @@ const TermsOfUse = () => {
                 colors). Core features cannot be changed. Maintenance and
                 support included based on the plan selected.
               </p>
-            </section>
+            </motion.section>
 
-            <section className="mb-6">
+            <motion.section className="mb-6" variants={itemVariants}>
               <h2 className="text-xl font-semibold">
                 3. Full Purchase & Ownership
               </h2>
@@ -69,9 +86,9 @@ const TermsOfUse = () => {
                 <strong>Resale is strictly prohibited</strong> without a
                 separate licensing agreement.
               </p>
-            </section>
+            </motion.section>
 
-            <section className="mb-6">
+            <motion.section className="mb-6" variants={itemVariants}>
               <h2 className="text-xl font-semibold">
                 4. Restrictions & Prohibited Use
               </h2>
@@ -80,9 +97,9 @@ const TermsOfUse = () => {
                 <li>Usage by unauthorized third parties</li>
                 <li>Reselling without a proper license agreement</li>
               </ul>
-            </section>
+            </motion.section>
 
-            <section className="mb-6">
+            <motion.section className="mb-6" variants={itemVariants}>
               <h2 className="text-xl font-semibold">5. Support & Updates</h2>
               <p>
                 Support is tied to the specific plan. Premium and Hosted
@@ -90,9 +107,9 @@ const TermsOfUse = () => {
                 Self-hosted purchases receive no future updates or feature
                 requests unless re-enrolled in hosting.
               </p>
-            </section>
+            </motion.section>
 
-            <section className="mb-6">
+            <motion.section className="mb-6" variants={itemVariants}>
               <h2 className="text-xl font-semibold">
                 6. Contact for Resale or Licensing
               </h2>
@@ -106,12 +123,10 @@ const TermsOfUse = () => {
                   Chilanzi11037@gmail.com
                 </a>
               </p>
-            </section>
+            </motion.section>
           </main>
         </section>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
-};
-
-export default TermsOfUse;
+}

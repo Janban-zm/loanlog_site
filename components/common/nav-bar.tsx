@@ -57,7 +57,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ links, logoSrc }) => {
   return (
     <div
       className={`${
-        isScrolled ? "fixed top-0 left-0 right-0 z-50" : "absolute"
+        isScrolled ? "fixed top-0 left-0 right-0 z-50" : "absolute z-50"
       } w-full transition-all duration-300 ${
         isScrolled ? "bg-blue-300" : "bg-transparent"
       }`}

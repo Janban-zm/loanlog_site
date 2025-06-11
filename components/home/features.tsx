@@ -63,7 +63,7 @@ export function Features() {
         defaultValue={featureItems[0].value}
         className="w-full max-w-6xl flex flex-col items-center"
       >
-        <TabsList className="flex flex-wrap gap-2 justify-center mb-8 max-w-xl lg:max-w-none">
+        <TabsList className="flex flex-wrap gap-2 justify-center mb-8 max-w-xl lg:max-w-none bg-transparent">
           {featureItems.map((item) => (
             <TabsTrigger
               key={item.value}

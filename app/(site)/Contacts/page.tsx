@@ -1,5 +1,8 @@
+"use client";
+
 import Form from "@/components/common/form";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const contactDetails = [
   {
@@ -10,7 +13,7 @@ const contactDetails = [
   {
     icon: FaEnvelope,
     label: "Email",
-    value: "Chilanzi11037@gmail.com",
+    value: "support@loanlytix.com",
   },
   {
     icon: FaMapMarkerAlt,
@@ -19,36 +22,57 @@ const contactDetails = [
   },
 ];
 
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2, delayChildren: 0.2 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
 export default function ContactPage() {
   return (
-    <div className="w-full">
+    <motion.div
+      className="w-full"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       {/* Hero Header */}
-      <header
-        className={
-          "text-center w-full bg-white bg-[url('/bg.svg')] bg-cover bg-center"
-        }
+      <motion.header
+        className="text-center w-full bg-white bg-[url('/bg.svg')] bg-cover bg-center"
+        variants={itemVariants}
       >
-        <section
-          className={
-            "flex flex-col text-white justify-center items-center h-[30dvh] lg:h-[25dvh]"
-          }
-        >
-          <h1 className={"text-3xl font-black text-blue-950"}>Contacts</h1>
-          <p className={"text-lg lg:text-xl  text-center text-blue-400"}>
+        <section className="flex flex-col text-white justify-center items-center h-[30dvh] lg:h-[25dvh]">
+          <h1 className="text-3xl font-black text-blue-950">Contacts</h1>
+          <p className="text-lg lg:text-xl text-center text-blue-400">
             Get in touch
           </p>
         </section>
-      </header>
+      </motion.header>
 
       {/* Main Content */}
-      <section className="py-10 px-4 md:px-12 max-w-7xl mx-auto max-h-max -mt-20 bg-white rounded-sm mb-10">
+      <motion.section
+        className="py-10 px-4 md:px-12 max-w-7xl mx-auto max-h-max -mt-20 bg-white rounded-sm mb-10"
+        variants={itemVariants}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
-          {/* right Section - Contact Form */}
-          <div className="w-full bg-transparent p-2 md:p-8">
+          {/* Form Section */}
+          <motion.div
+            className="w-full bg-transparent p-2 md:p-8"
+            variants={itemVariants}
+          >
             <Form />
-          </div>
-          {/* left Section - Intro & Contact Info */}
-          <div className="space-y-10 pt-4">
+          </motion.div>
+
+          {/* Contact Info Section */}
+          <motion.div className="space-y-10 pt-4" variants={itemVariants}>
             <div className="space-y-6">
               <h2 className="text-2xl font-semibold text-blue-950">
                 Let’s Talk Loans & Lending
@@ -64,11 +88,16 @@ export default function ContactPage() {
               <h3 className="text-xl font-medium text-gray-800 mb-6">
                 Contact Us
               </h3>
-              <ul className="space-y-6">
+
+              <motion.ul className="space-y-6" variants={containerVariants}>
                 {contactDetails.map((item, index) => {
                   const Icon = item.icon;
                   return (
-                    <li key={index} className="flex items-center gap-4">
+                    <motion.li
+                      key={index}
+                      className="flex items-center gap-4"
+                      variants={itemVariants}
+                    >
                       <div className="bg-blue-100 p-3 rounded-lg">
                         <Icon className="text-blue-600 w-5 h-5 shrink-0" />
                       </div>
@@ -80,14 +109,14 @@ export default function ContactPage() {
                           {item.value}
                         </span>
                       </div>
-                    </li>
+                    </motion.li>
                   );
                 })}
-              </ul>
+              </motion.ul>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </section>
-    </div>
+      </motion.section>
+    </motion.div>
   );
 }

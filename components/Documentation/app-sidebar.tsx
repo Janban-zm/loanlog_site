@@ -27,7 +27,7 @@ const data = {
         { title: "Register", url: "/Documentation/#register" },
         { title: "Login", url: "/Documentation/#login" },
         { title: "Dashboard", url: "/Documentation/#dashboard" },
-        { title: "Set Penalty Percentage", url: "/Documentation/#penalty" },
+        { title: "Set Penalty", url: "/Documentation/#penalty" },
       ],
     },
     {
