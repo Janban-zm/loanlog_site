@@ -120,7 +120,7 @@ export default function termsPage() {
                   className="text-blue-600 hover:underline"
                 >
                   {" "}
-                  Chilanzi11037@gmail.com
+                  support@loanlytix.com
                 </a>
               </p>
             </motion.section>

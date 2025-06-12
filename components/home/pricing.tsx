@@ -85,7 +85,9 @@ export function Pricing() {
                 <Button className="w-full">Get Started</Button>
               </Link>
             </span>
+
             <ul className="space-y-2">
+              <hr className="w-full h-[2px] bg-gradient-to-r from-transparent via-blue-600 to-transparent border-none " />
               {plan.features.map((feature, i) => (
                 <li
                   key={i}

@@ -19,10 +19,57 @@ const geistMono = Geist_Mono({
 });
 
 // Meta information
+
 export const metadata: Metadata = {
   title: "Loanlytix — Documentation",
   description:
     "Welcome to the Loanlytix documentation. Learn how to get started, integrate features, and manage loans effectively with our intuitive, developer-friendly platform. From onboarding to advanced configurations — everything you need is right here.",
+  keywords: [
+    "Loanlytix",
+    "documentation",
+    "integration",
+    "loan management",
+    "user docs",
+    "loan tracking",
+    "financial SaaS",
+  ],
+  authors: [{ name: "LoanLytix Team", url: "https://loanlytix.com" }],
+  generator: "Next.js",
+  applicationName: "Loanlytix",
+  metadataBase: new URL("https://loanlytix.com"),
+  openGraph: {
+    title: "Loanlytix — Documentation",
+    description:
+      "Full developer documentation for Loanlytix. Get started quickly and manage loans seamlessly with our easy-to-use platform.",
+    url: "https://loanlytix.com/docs",
+    siteName: "Loanlytix",
+    images: [
+      {
+        url: "https://loanlytix.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Loanlytix Documentation Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@loanlytix",
+    title: "Loanlytix — Documentation",
+    description:
+      "Full developer documentation for Loanlytix. Get started quickly and manage loans seamlessly with our easy-to-use platform.",
+    images: ["https://loanlytix.com/og-docs.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 // Footer data
@@ -40,7 +87,8 @@ export default function DocumentationLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <SidebarProvider>
           <AppSidebar variant="inset" />
           <SidebarInset>
