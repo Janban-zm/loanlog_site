@@ -4,20 +4,18 @@ import { motion } from "framer-motion";
 
 const data = [
   {
-    title: "Simple Setup",
-    description:
-      "Start managing loans in minutes with an easy onboarding process.",
+    title: "Take Control Fast",
+    description: "Set up quickly and stop losing track of your loans.",
     icon: SquareCheckBig,
   },
   {
-    title: "Smart Tracking",
-    description:
-      "Stay on top of repayments, disbursements, and client profiles effortlessly.",
+    title: "Full Agent Oversight",
+    description: "Track agents, repayments, and clients easily.",
     icon: SquareCheckBig,
   },
   {
-    title: "Affordable Growth",
-    description: "Scale your lending operations without heavy upfront costs.",
+    title: "Grow Simply",
+    description: "Scale your lending without tech headaches.",
     icon: SquareCheckBig,
   },
 ];

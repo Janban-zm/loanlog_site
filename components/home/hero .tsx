@@ -6,16 +6,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const data = {
-  title: "Built for Growing Lenders with Big Dreams",
+  title: "Stop Losing Money to Poor Loan Tracking",
   description:
-    "loanlytix makes loan management simple and affordable. Built for small to mid-sized lenders, it helps you onboard clients, track repayments, and grow your business — all from one smart platform.",
+    "LoanLytix gives small lenders full control over agents, repayments, and client accounts — eliminating mismanagement and helping you grow with confidence, all from one simple platform.",
   link_One: "/Documentation",
   link_Two: "/Contacts",
   image_Url: "/loanlog.png",
   image_alt: "Loan Log Dashboard Preview",
 };
 
-const parts = data.title.split(/(Growing Lenders|Big Dreams)/);
+const parts = data.title.split(/(Losing Money|Poor Loan)/);
 
 export function Hero() {
   return (
@@ -31,13 +31,13 @@ export function Hero() {
           <div className="w-full space-y-4 lg:w-[50vw]">
             <h1 className="text-center  text-5xl font-bold text-blue-950">
               {parts.map((part, i) => {
-                if (part === "Growing Lenders") {
+                if (part === "Losing Money") {
                   return (
                     <span key={i} className="text-blue-500 relative">
                       {part}
                     </span>
                   );
-                } else if (part === "Big Dreams") {
+                } else if (part === "Poor Loan") {
                   return (
                     <span key={i} className="text-blue-500 relative">
                       {part}

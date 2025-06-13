@@ -9,7 +9,7 @@ const featureItems = [
     label: "Calculations",
     value: "loan-calculations",
     description:
-      "Disburse loans with accurate interest, repayment, and fee calculations — no spreadsheets or manual work required.",
+      "Remove calculation errors and stay accurate with fully automated interest, repayments, and fees — no manual mistakes.",
     image: "/calculations.svg",
   },
   {
@@ -17,7 +17,7 @@ const featureItems = [
     label: "Penalties",
     value: "default-penalty",
     description:
-      "Track overdue loans and apply penalties automatically, helping you enforce repayment rules without extra admin effort.",
+      "Stay on top of overdue loans automatically — penalties apply on time, keeping borrowers accountable without extra admin.",
     image: "/reminder.svg",
   },
   {
@@ -25,7 +25,7 @@ const featureItems = [
     label: "Reminders",
     value: "email-reminders",
     description:
-      "Automatically send reminder emails for upcoming due dates and defaulted loans to keep borrowers in the loop.",
+      "Reduce defaults with automated reminders that notify borrowers before and after due dates, improving repayments.",
     image: "/email.svg",
   },
   {
@@ -33,7 +33,7 @@ const featureItems = [
     label: "Rewards",
     value: "client-credit",
     description:
-      "Build and track individual borrower credit scores to encourage repayment discipline and offer better rates to loyal clients.",
+      "Track borrower performance to reward discipline and build trust, making lending safer and smarter over time.",
     image: "/credit.svg",
   },
   {
@@ -41,7 +41,7 @@ const featureItems = [
     label: "Download CSV",
     value: "download-reports",
     description:
-      "Easily download repayment histories, client profiles, and loan performance data in CSV format — perfect for analysis, audits, or sharing with stakeholders.",
+      "Maintain full business transparency with easy data exports for reporting, audits, and decision-making.",
     image: "/download.svg",
   },
 ];

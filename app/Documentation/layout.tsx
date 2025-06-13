@@ -19,36 +19,37 @@ const geistMono = Geist_Mono({
 });
 
 // Meta information
-
 export const metadata: Metadata = {
-  title: "Loanlytix — Documentation",
+  title: "LoanLytix — User Documentation",
   description:
-    "Welcome to the Loanlytix documentation. Learn how to get started, integrate features, and manage loans effectively with our intuitive, developer-friendly platform. From onboarding to advanced configurations — everything you need is right here.",
+    "Learn how to use LoanLytix to manage your loans, agents, repayments, and reports. Simple step-by-step guides to help you get started, operate efficiently, and fully control your lending business.",
   keywords: [
-    "Loanlytix",
-    "documentation",
-    "integration",
-    "loan management",
-    "user docs",
-    "loan tracking",
-    "financial SaaS",
+    "LoanLytix",
+    "user guide",
+    "loan management help",
+    "how to manage loans",
+    "agent management",
+    "loan tracking guide",
+    "financial management",
+    "loan software Zambia",
+    "LoanLytix help center",
   ],
   authors: [{ name: "LoanLytix Team", url: "https://loanlytix.com" }],
   generator: "Next.js",
-  applicationName: "Loanlytix",
+  applicationName: "LoanLytix",
   metadataBase: new URL("https://loanlytix.com"),
   openGraph: {
-    title: "Loanlytix — Documentation",
+    title: "LoanLytix — User Documentation",
     description:
-      "Full developer documentation for Loanlytix. Get started quickly and manage loans seamlessly with our easy-to-use platform.",
+      "Step-by-step LoanLytix guides for managing loans, agents, repayments, and reports. Learn how to fully use your loan management system with confidence.",
     url: "https://loanlytix.com/docs",
-    siteName: "Loanlytix",
+    siteName: "LoanLytix",
     images: [
       {
-        url: "https://loanlytix.com/og-image.png",
+        url: "https://loanlytix.com/og-docs.png",
         width: 1200,
         height: 630,
-        alt: "Loanlytix Documentation Preview",
+        alt: "LoanLytix User Documentation Preview",
       },
     ],
     locale: "en_US",
@@ -57,9 +58,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@loanlytix",
-    title: "Loanlytix — Documentation",
+    title: "LoanLytix — User Documentation",
     description:
-      "Full developer documentation for Loanlytix. Get started quickly and manage loans seamlessly with our easy-to-use platform.",
+      "Step-by-step LoanLytix guides for managing loans, agents, repayments, and reports. Learn how to fully use your loan management system with confidence.",
     images: ["https://loanlytix.com/og-docs.png"],
   },
   icons: {

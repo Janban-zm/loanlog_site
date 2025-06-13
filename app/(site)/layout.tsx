@@ -16,39 +16,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "loanlytix — Smarter Loan Tracking at Your Fingertips",
+  title: "LoanLytix — Smarter Loan & Agent Management for Small Lenders",
   description:
-    "loanlytix helps you onboard quickly and manage all your loans in one place. Say goodbye to missed payments and confusion — your financial clarity starts now.",
+    "LoanLytix helps small lenders, microfinance businesses, and loan groups manage loans, agents, and repayments with full accountability. Stop losing money to poor tracking — take full control today.",
   keywords: [
-    "loan management",
-    "loan tracking",
-    "financial management",
-    "loan organizer",
-    "payment reminders",
-    "loanlytix",
-    "Zambia Loans",
-    "managment system",
-    "kitwe",
-    "lusaka",
-    "fintech",
-    "software",
+    "loan management Zambia",
+    "agent tracking",
+    "loan software Kitwe",
+    "financial management Zambia",
+    "microfinance software",
+    "loan repayment tracking",
+    "LoanLytix",
+    "SME loan management",
+    "lending software Africa",
+    "Chilimba management",
+    "community loans",
+    "fintech Zambia",
   ],
   authors: [{ name: "LoanLytix Team", url: "https://loanlytix.com" }],
   generator: "Next.js",
-  applicationName: "loanlytix",
+  applicationName: "LoanLytix",
   metadataBase: new URL("https://loanlytix.com"),
   openGraph: {
-    title: "loanlytix — Smarter Loan Tracking at Your Fingertips",
+    title: "LoanLytix — Smarter Loan & Agent Management for Small Lenders",
     description:
-      "loanlytix helps you onboard quickly and manage all your loans in one place. Say goodbye to missed payments and confusion — your financial clarity starts now.",
+      "LoanLytix helps small lenders, microfinance businesses, and loan groups manage loans, agents, and repayments with full accountability. Stop losing money to poor tracking — take full control today.",
     url: "https://loanlytix.com",
-    siteName: "loanlytix",
+    siteName: "LoanLytix",
     images: [
       {
         url: "https://loanlytix.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "loanlytix preview image",
+        alt: "LoanLytix dashboard preview",
       },
     ],
     locale: "en_US",
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@loanlytix",
-    title: "loanlytix — Smarter Loan Tracking at Your Fingertips",
+    title: "LoanLytix — Smarter Loan & Agent Management for Small Lenders",
     description:
-      "loanlytix helps you onboard quickly and manage all your loans in one place. Say goodbye to missed payments and confusion — your financial clarity starts now.",
+      "LoanLytix helps small lenders, microfinance businesses, and loan groups manage loans, agents, and repayments with full accountability. Stop losing money to poor tracking — take full control today.",
     images: ["https://loanlytix.com/og-image.png"],
   },
   icons: {

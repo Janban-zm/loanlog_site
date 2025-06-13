@@ -14,7 +14,7 @@ export function CoreSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          {/* Gradient Overlay: Solid blue → Transparent right */}
+          {/* Gradient Overlay */}
           <span
             className="absolute inset-0 z-0"
             style={{
@@ -25,16 +25,15 @@ export function CoreSection() {
           <div className="w-full flex flex-col justify-between items-start min-h-80 gap-5 text-blue-950 relative z-10">
             <section className="space-y-4">
               <h2 className="text-3xl font-bold">Access from Anywhere</h2>
-              <p className="max-w-[550px] ">
-                Stay connected and manage your loan data from anywhere. LoanLog
-                is fully cloud-based, ensuring speed and reliability on all
-                devices.
+              <p className="max-w-[550px]">
+                Manage loans, agents, and repayments anytime, anywhere. Stay in
+                full control even when you’re on the move.
               </p>
             </section>
           </div>
         </motion.span>
 
-        {/* Feature 2 – Scales with Your Business */}
+        {/* Feature 2 – Make Agents Accountable */}
         <motion.span
           className="w-full relative p-5 lg:p-16 flex items-center bg-cover bg-no-repeat bg-center"
           style={{ backgroundImage: `url(deals.jpg)` }}
@@ -51,18 +50,17 @@ export function CoreSection() {
 
           <div className="w-full flex flex-col justify-between items-start min-h-80 gap-5 text-blue-950 relative z-10">
             <section className="space-y-4">
-              <h2 className="text-3xl font-bold">Scales with Your Business</h2>
+              <h2 className="text-3xl font-bold">Make Agents Accountable</h2>
               <p className="max-w-[550px] ">
-                From small teams to enterprise operations, LoanLog adapts to
-                your workflow. Add users, track more data, and expand without
-                limitations.
+                Eliminate mismanagement with real-time agent tracking and full
+                accountability for every repayment.
               </p>
             </section>
           </div>
         </motion.span>
       </section>
 
-      {/* Feature 3 – Modern Decision Tools */}
+      {/* Feature 3 – Smart Decision Tools */}
       <motion.section
         className="w-full relative p-5 lg:p-16 flex items-center bg-cover bg-no-repeat bg-center"
         style={{ backgroundImage: `url(Kpis.jpg)` }}
@@ -79,11 +77,10 @@ export function CoreSection() {
 
         <div className="w-full flex flex-col justify-between items-start min-h-80 gap-5 text-blue-950 relative z-10">
           <section className="space-y-4">
-            <h2 className="text-3xl font-bold">Modern Decision Tools</h2>
+            <h2 className="text-3xl font-bold">Smart Decision Tools</h2>
             <p className="max-w-[550px]">
-              Get instant access to powerful KPIs and smart dashboards. Make
-              better financial decisions, faster — based on real-time loan and
-              customer data.
+              Use real-time KPIs and dashboards to make clear business decisions
+              and stay ahead of repayment risks.
             </p>
           </section>
         </div>
